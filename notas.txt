@@ -1,33 +1,31 @@
 Instrucciones Git
 
-A) Se deberá crear una carpeta en la máquina local, puede ser con comandos desde terminal
+A) Clonar un repo con la sentencia git clone, normalmente nos dejará en la rama proincipal una vez que lo clone en local
 
-B) Inicializar el repositorio git con la sentencia git init, esto dentro de la carpeta que se creó
+B) Crear una rama develop donde trabajaremos en forma local con la sentencia git branch develop
 
-C) Crea un archivo txt con la sentencia touch
+C) Cambiarnos de rama a develop con git checkout develop
 
 D) Validar el estatus del repositorio con el comando git status
 
-E) Agregar archivos a Staging con el comando git add
+E) Realizar los cambios en los fiucheros donde se necesite
+
+E) Agregar archivos a Staging con el comando git add nombre del archivo
 
 F) Crear el commit con esta instrucción: git commit -m "Your message about the commit"
 
-G) Crear una rama en el repositorio con la sentencia git branch, usualmente la primera que se crea en un repositorio se llama master y es la rama principal
+G) Cambiar a rama main con git checkout main
+
+I) Unir las ramas con un git merge
 
 H) Para realizar un push se debe agregar la siguiente sentencia:
 
-git remote add origin https://github.com/cubeton/mynewrepository.git
+git push
 
-git push -u origin master
-
-Obviamente sustituyendo los datos del repositorio actual, solicitará autenticación con el usuario y con un token que debe ser generado en la página de GitHub:
+Solicitará autenticación con el usuario y con un token que debe ser generado en la página de GitHub:
 
 Settings->Developer settings->Personal access tokens
 
 Ahí generar el token y darle permisos para modificar repositorios.
-
-Nota: Para hacer push de una rama (branch) esta debe estar creada en el repositorio local
-
-
 
 Esto es una prueba
